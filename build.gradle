@@ -19,6 +19,8 @@ def getVersionName = { ->
 	ignoreExitValue true
     }
     version=stdout.toString().trim()
+    if (version.indexOf('/') >= 0)
+        version = version.substring(version.indexOf('/')+1)
     if (version.indexOf('-') >= 0 || version.isEmpty())
     	version += '-SNAPSHOT'
     return version
