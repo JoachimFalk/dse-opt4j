@@ -28,7 +28,7 @@ package org.opt4j.core.config;
 public interface Transformer<I, O> {
 	/**
 	 * The given input {@code in} is not changed by transforming it to a new
-	 * object of type <O>. Subsequent calls with equal instances of {@code in}
+	 * object of type &lt;O&gt;. Subsequent calls with equal instances of {@code in}
 	 * should result in equal outputs.
 	 * 
 	 * @param in

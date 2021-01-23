@@ -24,13 +24,10 @@ import org.opt4j.core.start.Constant;
  * The {@link LOTZModule} for the "Leading Ones Trailing Zeros" optimization
  * problem. This is a 2-dimensional optimization problem:
  * </p>
- * 
- * <p>
  * <ol>
  * <li>maximize the consecutive ones from the beginning of a binary string</li>
  * <li>maximize the consecutive ones from the end of a binary string</li>
  * </ol>
- * </p>
  * 
  * @author lukasiewycz
  * 

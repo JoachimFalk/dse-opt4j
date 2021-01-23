@@ -26,15 +26,17 @@ import org.opt4j.core.Genotype;
  * {@link Genotype}.
  * </p>
  * <p>
- * Example problem: Select on/off state of five switches<br/>
- * Example usage:<blockquote>
+ * Example problem: Select on/off state of five switches<br>
+ * Example usage:
+ * </p>
  * 
- * <pre>
+ * <blockquote><pre>
  * BooleanGenotype genotype = new BooleanGenotype();
  * genotype.init(new Random(), 5);
- * </pre>
+ * </pre></blockquote>
  * 
- * </blockquote>Example instance: [false, true, true, true, true]<br/>
+ * <p>
+ * Example instance: [false, true, true, true, true]<br>
  * Example search space size: 2<sup>5</sup>
  * </p>
  * 
