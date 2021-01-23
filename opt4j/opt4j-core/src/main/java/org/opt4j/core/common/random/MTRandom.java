@@ -53,7 +53,7 @@ package org.opt4j.core.common.random;
  *         <!-- Creative Commons License --> <a
  *         href="http://creativecommons.org/licenses/LGPL/2.1/"><img
  *         alt="CC-GNU LGPL" border="0"
- *         src="http://creativecommons.org/images/public/cc-LGPL-a.png" /></a><br />
+ *         src="http://creativecommons.org/images/public/cc-LGPL-a.png"></a><br>
  *         This software is licensed under the <a
  *         href="http://creativecommons.org/licenses/LGPL/2.1/">CC-GNU LGPL</a>.
  *         <!-- /Creative Commons License -->
