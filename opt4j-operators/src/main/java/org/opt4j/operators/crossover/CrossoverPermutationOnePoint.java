@@ -45,15 +45,15 @@ import com.google.inject.Inject;
  * </p>
  * 
  * <p>
- * Given two permutations<br />
- * {@code 1 2 3 4 5 6 7 8} and {@code 8 7 6 5 4 3 2 1}.<br />
- * This results, for instance, in<br/>
+ * Given two permutations<br>
+ * {@code 1 2 3 4 5 6 7 8} and {@code 8 7 6 5 4 3 2 1}.<br>
+ * This results, for instance, in<br>
  * {@code 1 2 3 4 5 8 7 6} or {@code 1 2 8 7 6 5 4 3}.
  * </p>
  * 
  * <p>
  * Additionally, a {@code rotation} value defines if the initial permutation are
- * randomly rotated. With the {@code rotation} possible results would be<br />
+ * randomly rotated. With the {@code rotation} possible results would be<br>
  * {@code 4 5 6 8 7 3 2 1} and {@code 7 8 1 2 4 3 6 5}.
  * </p>
  * 
