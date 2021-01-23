@@ -29,11 +29,11 @@
  * <p>
  * The {@link org.opt4j.viewer.Viewer} is a {@link javax.swing.JFrame}
  * consisting of the following elements:
+ * </p>
  * <ul>
  * <li>{@link org.opt4j.viewer.ToolBar} - a panel for arbitrary buttons</li>
  * <li>{@link org.opt4j.viewer.Viewport} - a desktop for the widgets</li>
  * </ul>
- * </p>
  * <p>
  * The {@link org.opt4j.viewer.Viewport} is a desktop for
  * {@link org.opt4j.viewer.Widget} elements. A widget is similar to a

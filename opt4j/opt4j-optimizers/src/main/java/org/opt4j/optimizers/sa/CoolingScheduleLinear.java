@@ -33,11 +33,11 @@ import com.google.inject.Inject;
  * {@link SimulatedAnnealing}.
  * </p>
  * <p>
- * {@code tn - final temperature}<br />
- * {@code t0 - initial temperature}<br />
- * {@code i - current iteration}<br />
- * {@code n - maximal number of iterations} <br />
- * {@code a - alpha value}<br />
+ * {@code tn - final temperature}<br>
+ * {@code t0 - initial temperature}<br>
+ * {@code i - current iteration}<br>
+ * {@code n - maximal number of iterations} <br>
+ * {@code a - alpha value}<br>
  * </p>
  * <p>
  * The current temperature is calculated by {@code t0 - (t0 - tn)*(i/n)}.

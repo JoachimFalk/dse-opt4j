@@ -35,15 +35,15 @@ import org.opt4j.core.Genotype;
  * {@link Integer} values.
  * </p>
  * <p>
- * Example problem: Select the outcome of throwing five dice<br/>
- * Example usage: <blockquote>
- * 
- * <pre>
+ * Example problem: Select the outcome of throwing five dice<br>
+ * Example usage:
+ * </p>
+ * <blockquote><pre>
  * IntegerGenotype genotype = new IntegerGenotype(1, 6);
  * genotype.init(new Random(), 5);
- * </pre>
- * 
- * </blockquote> Example instance: [3, 5, 6, 1, 3]<br/>
+ * </pre></blockquote>
+ * <p>
+ * Example instance: [3, 5, 6, 1, 3]<br>
  * Example search space size: 6<sup>5</sup>
  * </p>
  * 

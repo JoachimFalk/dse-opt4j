@@ -27,6 +27,7 @@
  * </p>
  * <p>
  * The basic {@link org.opt4j.core.Genotype} classes are the following:
+ * </p>
  * <ul>
  * <li>{@link org.opt4j.core.genotype.BooleanGenotype} - a list of boolean (binary)
  * values</li>
@@ -38,7 +39,6 @@
  * <li>{@link org.opt4j.core.genotype.CompositeGenotype} - a container for arbitrary
  * genotype objects</li>
  * </ul>
- * </p>
  * <p>
  * Try to stick to the predefined genotype objects. Use the
  * {@link org.opt4j.core.genotype.CompositeGenotype} to assemble complex genotypes.
