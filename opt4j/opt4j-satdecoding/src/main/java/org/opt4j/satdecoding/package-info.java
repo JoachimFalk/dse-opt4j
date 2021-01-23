@@ -49,16 +49,18 @@
  * solution is only considered feasible if the variables satisfy a set of
  * <em>constraints</em> . The following example is used to illustrate this
  * problem:
+ * </p>
  * 
  * <pre>
  * minimize w + x + y + z
  * subject to:
- *     w + x + y > 0    (constraint 1)
- *     y + z > 0        (constraint 2)
- *     w + z > 0        (constraint 3)
- *     x + y + z > 0    (constraint 4)
+ *     w + x + y &gt; 0    (constraint 1)
+ *     y + z &gt; 0        (constraint 2)
+ *     w + z &gt; 0        (constraint 3)
+ *     x + y + z &gt; 0    (constraint 4)
  * </pre>
- * 
+ *
+ * <p>
  * Solution {@code (w=1,x=1,y=0,z=1)} is feasible which fulfills all constraints
  * and the objective is 3. On the other hand, for {@code (w=0,x=0,y=0,z=0)}, the
  * objective is 0 but this solution is not feasible and therefore invalid. A
@@ -70,6 +72,7 @@
  * In the following, an example that minimizes the ones of a random is outlined.
  * First, the phenotype and {@link org.opt4j.core.problem.Evaluator} are
  * defined.
+ * </p>
  * 
  * <pre>
  * public class MinOnesResult extends ArrayList&lt;Boolean&gt; {
@@ -153,7 +156,6 @@
  * }
  * </pre>
  * 
- * </p>
  */
 package org.opt4j.satdecoding;
 

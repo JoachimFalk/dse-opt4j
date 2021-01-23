@@ -186,7 +186,7 @@ task copyTutorial(type: Copy, dependsOn: ":opt4j-tutorial:tutorial"){
 
 task website(dependsOn: [copyWebsite, copyJavadoc, copyTutorial]) {}
 
-/* for now ignore all javadoc errors in case of Java 8 */
+/* for now ignore all javadoc errors in case of Java 8
 if (JavaVersion.current().isJava8Compatible()) {
     allprojects {
 		tasks.withType(Javadoc) {
@@ -194,6 +194,7 @@ if (JavaVersion.current().isJava8Compatible()) {
 		}
     }
 }
+ */
 
 task alldocs(type: Javadoc) {
 	title = "Opt4J version $version Project API Documentation"
