@@ -29,15 +29,15 @@ import org.opt4j.core.Genotype;
  * </p>
  * <p>
  * Example problem: Select the outcome of throwing five dice die<sub>1</sub>,
- * die<sub>2</sub>, die<sub>3</sub>, die<sub>4</sub>, die<sub>5</sub><br/>
- * Example usage: <blockquote>
- * 
- * <pre>
+ * die<sub>2</sub>, die<sub>3</sub>, die<sub>4</sub>, die<sub>5</sub><br>
+ * Example usage:
+ * </p>
+ * <blockquote><pre>
  * IntegerGenotype&lt;Die&gt; genotype = new IntegerMapGenotype&lt;Die&gt;(Arrays.asList(die1, die2, die3, die4, die5), 1, 6);
  * genotype.init(new Random());
- * </pre>
- * 
- * </blockquote> Example instance: [die1=3, die2=5, die3=6, die4=1, die5=3]<br/>
+ * </pre></blockquote>
+ * <p>
+ * Example instance: [die1=3, die2=5, die3=6, die4=1, die5=3]<br>
  * Example search space size: 6<sup>5</sup>
  * </p>
  * 

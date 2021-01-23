@@ -27,10 +27,12 @@ import com.google.inject.Singleton;
  * </p>
  * <p>
  * The {@link Optimizer} calls the methods
+ * </p>
  * <ul>
  * <li>{@link Control#checkpoint()} and</li>
  * <li>{@link Control#checkpointStop()}</li>
  * </ul>
+ * <p>
  * in which the process might get paused, terminated (by the
  * {@link TerminationException}) or stopped (by the {@link StopException}). By
  * definition, a {@link StopException} might get thrown only between iterations,

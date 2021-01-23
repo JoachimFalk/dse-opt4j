@@ -44,11 +44,11 @@ public class Constraint extends ArrayList<Term> {
 	protected int rhs = 1;
 
 	/**
-	 * The {@link Operator}s correspond to the Boolean operators <=,=,>=.
+	 * The {@link Operator}s correspond to the Boolean operators &lt;=,=,&gt;=.
 	 */
 	public enum Operator {
 		/**
-		 * Boolean operation <=.
+		 * Boolean operation &lt;=.
 		 */
 		LE,
 		/**
@@ -56,7 +56,7 @@ public class Constraint extends ArrayList<Term> {
 		 */
 		EQ,
 		/**
-		 * Boolean operation >=.
+		 * Boolean operation &gt;=.
 		 */
 		GE;
 
@@ -102,7 +102,7 @@ public class Constraint extends ArrayList<Term> {
 		 * Converts a {@link String} to an operator.
 		 * 
 		 * @param string
-		 *            the string (<=,=,>=).
+		 *            the string (&lt;=,=,&gt;=).
 		 * @return the operator
 		 */
 		public static Operator getOperator(String string) {
@@ -129,7 +129,7 @@ public class Constraint extends ArrayList<Term> {
 	 * Constructs a linear {@link Constraint}.
 	 * 
 	 * @param operator
-	 *            the operator (<=,=,>=) as a String
+	 *            the operator (&lt;=,=,&gt;=) as a String
 	 * @param rhs
 	 *            the right-hand-side value
 	 */
