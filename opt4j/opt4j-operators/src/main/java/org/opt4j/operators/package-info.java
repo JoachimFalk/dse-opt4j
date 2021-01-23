@@ -22,6 +22,7 @@
  * optimization process in order to find better solutions. The variation is
  * performed by the {@link org.opt4j.core.optimizer.Operator} classes. The
  * framework already contains several operators:
+ * </p>
  * <ul>
  * <li>{@link org.opt4j.operators.algebra.Algebra} - Vector-based operator with
  * terms (restricted to {@link org.opt4j.core.genotype.DoubleGenotype})</li>
@@ -35,6 +36,7 @@
  * <li>{@link org.opt4j.operators.neighbor.Neighbor} - Neighbor operator that
  * changes one genotype</li>
  * </ul>
+ * <p>
  * Each {@link org.opt4j.core.optimizer.Operator} is parameterized with the
  * corresponding target {@link org.opt4j.core.Genotype}. Adding custom
  * operators, e.g., a new {@link org.opt4j.operators.crossover.Crossover}

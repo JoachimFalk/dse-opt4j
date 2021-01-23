@@ -42,7 +42,7 @@ import com.google.inject.Inject;
  * "http://www.iana.org/assignments/media-types/text/tab-separated-values"
  * >Definition of tab-separated-values (tsv)</a> by IANA.
  * 
- * An infeasible Objective is printed as <it>INFEASIBLE</it>.
+ * An infeasible Objective is printed as <em>INFEASIBLE</em>.
  * 
  * @see Objective
  * @author reimann, lukasiewycz

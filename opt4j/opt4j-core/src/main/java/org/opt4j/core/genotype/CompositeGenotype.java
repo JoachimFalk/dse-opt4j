@@ -31,11 +31,12 @@ import org.opt4j.core.Genotype;
  * {@link CompositeGenotype#size()} returns the sum of the sizes of the
  * contained {@link Genotype}s.
  * </p>
+ * <p>
  * A specific {@link CompositeGenotype} has to add each contained
  * {@link Genotype} by calling the method {@link #put(Object, Genotype)} where
  * {@link Object} is an arbitrary identifier.
- * 
- * <p>
+ * </p>
+ * <br>
  * Example:
  * 
  * <pre>
@@ -55,8 +56,6 @@ import org.opt4j.core.Genotype;
  * 		}
  * }
  * </pre>
- * 
- * </p>
  * 
  * @param <K>
  *            the type of key for the mapping
