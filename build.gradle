@@ -61,7 +61,7 @@ def descriptions = [
 subprojects {
     apply plugin: 'java'
     apply plugin: 'maven'
-    apply plugin: 'signing'
+//  apply plugin: 'signing'
     apply plugin: 'eclipse'
     apply plugin: 'jacoco'
 
@@ -86,58 +86,58 @@ subprojects {
 		archives javadocJar 
 	}
 
-	signing {
-	    required = { gradle.taskGraph.hasTask("uploadArchives") }
-	    sign configurations.archives
-	}
+//	signing {
+//	    required = { gradle.taskGraph.hasTask("uploadArchives") }
+//	    sign configurations.archives
+//	}
 	
-	uploadArchives {
-	    repositories {
-	        mavenDeployer {
-	            configuration = configurations.deployerJars
-	            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-	 
-	            repository(url: stagingURL) {
-	              authentication(userName: sonatypeUsername, password: sonatypePassword)
-	            }
-	 
-	            pom.project {
-	               name 'Opt4J'
-	               packaging 'jar'
-	               description descriptions[project.name]
-	               url 'http://www.opt4j.org'
-	 
-	               scm {
-	                   url 'http://hg.code.sf.net/p/opt4j/hgroot'
-	                   connection 'http://hg.code.sf.net/p/opt4j/hgroot'
-	               }
-	 
-	               licenses {
-	                   license {
-	                       name 'GNU Lesser General Public License'
-	                       url 'http://www.gnu.org/licenses/lgpl.txt'
-	                       distribution 'repo'
-	                   }
-	               }
-	 
-	               developers {
-	                   developer {
-	                       id 'lukasiewycz'
-	                       name 'Martin Lukasiewycz'
-	                   }
-	                   developer {
-	                       id 'reimann'
-	                       name 'Felix Reimann'
-	                   }
-	                   developer {
-	                       id 'glass'
-	                       name 'Michael Glass'
-	                   }
-	               }
-	           }
-	        }
-	    }
-	}
+//	uploadArchives {
+//	    repositories {
+//	        mavenDeployer {
+//	            configuration = configurations.deployerJars
+//	            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+//	 
+//	            repository(url: stagingURL) {
+//	              authentication(userName: sonatypeUsername, password: sonatypePassword)
+//	            }
+//	 
+//	            pom.project {
+//	               name 'Opt4J'
+//	               packaging 'jar'
+//	               description descriptions[project.name]
+//	               url 'http://www.opt4j.org'
+//	 
+//	               scm {
+//	                   url 'http://hg.code.sf.net/p/opt4j/hgroot'
+//	                   connection 'http://hg.code.sf.net/p/opt4j/hgroot'
+//	               }
+//	 
+//	               licenses {
+//	                   license {
+//	                       name 'GNU Lesser General Public License'
+//	                       url 'http://www.gnu.org/licenses/lgpl.txt'
+//	                       distribution 'repo'
+//	                   }
+//	               }
+//	 
+//	               developers {
+//	                   developer {
+//	                       id 'lukasiewycz'
+//	                       name 'Martin Lukasiewycz'
+//	                   }
+//	                   developer {
+//	                       id 'reimann'
+//	                       name 'Felix Reimann'
+//	                   }
+//	                   developer {
+//	                       id 'glass'
+//	                       name 'Michael Glass'
+//	                   }
+//	               }
+//	           }
+//	        }
+//	    }
+//	}
 
 	jacocoTestReport {
 		additionalSourceDirs = files(sourceSets.main.allSource.srcDirs)
@@ -156,11 +156,11 @@ compileJava  {
 	println "Current JVM: "+currentJvm
 }
 
-uploadArchives.doFirst {
-	println "Sonatype Username: "+sonatypeUsername 
-	println "Private Key: "+project.ext.get("signing.secretKeyRingFile")
-	println "Private Key ID: "+project.ext.get("signing.keyId")
-}
+//uploadArchives.doFirst {
+//	println "Sonatype Username: "+sonatypeUsername 
+//	println "Private Key: "+project.ext.get("signing.secretKeyRingFile")
+//	println "Private Key ID: "+project.ext.get("signing.keyId")
+//}
 
 dependencies {
 	runtime project(':opt4j-core')
@@ -260,7 +260,7 @@ task alldocs(type: Javadoc) {
 task release(dependsOn: [distZip,website] ){}
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.4.1'
+    gradleVersion = '4.10.3'
 }
 
 task fatjar(dependsOn: subprojects.jar, type: Jar) {
